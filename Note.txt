@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=yq4BeRtUHbk (Can I Create Netflix’s Video Carousel UI?)
+
+https://github.com/WebDevSimplified/netflix-sliding-movie-ui
+https://github.com/Annie-Huang/netflix-sliding-movie-ui
+
+--------------------------------------------------------------------
