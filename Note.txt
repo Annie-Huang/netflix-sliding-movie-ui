@@ -4,3 +4,21 @@ https://github.com/WebDevSimplified/netflix-sliding-movie-ui
 https://github.com/Annie-Huang/netflix-sliding-movie-ui
 
 --------------------------------------------------------------------
+
+https://via.placeholder.com/200?text=1
+
+Emmet:
+img[src='https://via.placeholder.com/2$0?text=$']*9
+means making the size changing and the text changing.
+it will create:
+        <img src="https://via.placeholder.com/210?text=1" alt="" />
+        <img src="https://via.placeholder.com/220?text=2" alt="" />
+        <img src="https://via.placeholder.com/230?text=3" alt="" />
+        <img src="https://via.placeholder.com/240?text=4" alt="" />
+        <img src="https://via.placeholder.com/250?text=5" alt="" />
+        <img src="https://via.placeholder.com/260?text=6" alt="" />
+        <img src="https://via.placeholder.com/270?text=7" alt="" />
+        <img src="https://via.placeholder.com/280?text=8" alt="" />
+        <img src="https://via.placeholder.com/290?text=9" alt="" />
+
+Want to test it work with different image sizes
