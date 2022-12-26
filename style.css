@@ -17,8 +17,9 @@ body {
 }
 .slider {
   display: flex;
-  width: calc(100% - 2 * var(--slider-padding));
-  transform: translateX(0%);
+  /*width: calc(100% - 2 * var(--slider-padding));*/
+  flex-grow: 1;
+  transform: translateX(00%);
 }
 .slider > img {
   flex: 0 0 25%;
@@ -28,8 +29,10 @@ body {
 }
 
 .handle {
-  width: var(--slider-padding);
-  background-color: rgba(0, 0, 0, 0.5);
+  flex-grow: 0;
+  /*width: var(--slider-padding);*/
+  width: 5rem;
+  background-color: rgba(0, 0, 0, 0.25);
   z-index: 10;
   margin: 0.25rem 0;
 }
