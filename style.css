@@ -29,10 +29,26 @@ body {
 }
 
 .handle {
+  border: none;
+  border-radius: 1rem;
   flex-grow: 0;
   /*width: var(--slider-padding);*/
   width: 5rem;
   background-color: rgba(0, 0, 0, 0.25);
   z-index: 10;
   margin: 0.25rem 0;
+  cursor: pointer;
+}
+
+.left-handle {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.right-handle {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.handle:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
