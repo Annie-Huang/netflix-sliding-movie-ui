@@ -9,7 +9,7 @@ https://via.placeholder.com/200?text=1
 
 Emmet:
 img[src='https://via.placeholder.com/2$0?text=$']*9
-means making the size changing and the text changing.
+means making the size changing and the text changing. We want different size so we can make sure the pic display properly even if the movie images doesn't come in with the right size.
 it will create:
         <img src="https://via.placeholder.com/210?text=1" alt="" />
         <img src="https://via.placeholder.com/220?text=2" alt="" />

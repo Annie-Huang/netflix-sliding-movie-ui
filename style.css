@@ -18,11 +18,18 @@ body {
 .slider {
   display: flex;
   width: calc(100% - 2 * var(--slider-padding));
-  transform: translateX(-100%);
+  transform: translateX(0%);
 }
 .slider > img {
   flex: 0 0 25%;
   max-width: 25%; /* Need to limit the max-width, otherwise small screen will not fix into 4 cards */
   aspect-ratio: 16 / 9;
   padding: 0.25rem;
+}
+
+.handle {
+  width: var(--slider-padding);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  margin: 0.25rem 0;
 }
