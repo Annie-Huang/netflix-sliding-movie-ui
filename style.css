@@ -50,6 +50,11 @@ body {
   border-bottom-right-radius: 0;
 }
 
+.handle:hover,
+.handle:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .handle {
   font-size: 5rem;
   display: flex;
@@ -57,9 +62,15 @@ body {
   justify-content: center;
   color: white;
   line-height: 0;
+  transition: background-color 150ms ease-in-out;
 }
 
-.handle:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+.text {
+  transition: transform 150ms ease-in-out;
+  margin-top: -20px;
+}
+
+.handle:hover .text,
+.handle:focus .text {
+  transform: scale(1.2);
 }
