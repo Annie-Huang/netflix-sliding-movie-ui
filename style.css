@@ -4,16 +4,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --slider-padding: 5rem;
+}
+
 body {
   margin: 0;
 }
 .container {
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .slider {
   display: flex;
-  width: 100%;
-  transform: translateX(0);
+  width: calc(100% - 2 * var(--slider-padding));
+  transform: translateX(-100%);
 }
 .slider > img {
   flex: 0 0 25%;
