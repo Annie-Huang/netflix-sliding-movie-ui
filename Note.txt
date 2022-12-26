@@ -3,6 +3,7 @@ https://www.youtube.com/watch?v=yq4BeRtUHbk (Can I Create Netflix’s Video Caro
 https://github.com/WebDevSimplified/netflix-sliding-movie-ui
 https://github.com/Annie-Huang/netflix-sliding-movie-ui
 
+https://www.toptal.com/designers/htmlarrows/
 --------------------------------------------------------------------
 
 https://via.placeholder.com/200?text=1
