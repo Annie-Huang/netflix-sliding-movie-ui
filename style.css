@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.container {
+  width: 100%;
+}
+.slider {
+  display: flex;
+  width: 100%;
+  transform: translateX(0);
+}
+.slider > img {
+  flex: 0 0 25%;
+  max-width: 25%; /* Need to limit the max-width, otherwise small screen will not fix into 4 cards */
+  aspect-ratio: 16 / 9;
+  padding: 0.25rem;
+}
