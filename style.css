@@ -17,9 +17,9 @@ body {
 }
 .slider {
   display: flex;
-  /*width: calc(100% - 2 * var(--slider-padding));*/
   flex-grow: 1;
-  transform: translateX(00%);
+  margin: 0 0.25rem; /* match the padding of the .slider > img */
+  transform: translateX(-100%);
 }
 .slider > img {
   flex: 0 0 25%;
@@ -36,6 +36,7 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
   z-index: 10;
   margin: 0.25rem 0;
+  padding: 0 0.5rem;
   cursor: pointer;
 
   font-size: 5rem;
