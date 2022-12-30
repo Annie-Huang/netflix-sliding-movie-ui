@@ -5,7 +5,7 @@
 }
 
 :root {
-  --slider-padding: 5rem;
+  --handle-size: 3rem;
 }
 
 body {
@@ -36,10 +36,11 @@ body {
   border: none;
   border-radius: 1rem;
   flex-grow: 0;
+  flex-shrink: 0;
   background-color: rgba(0, 0, 0, 0.25);
   z-index: 10;
   margin: 0.25rem 0;
-  padding: 0 0.5rem;
+  width: var(--handle-size);
   cursor: pointer;
 
   font-size: 5rem;
@@ -73,4 +74,16 @@ body {
 .handle:hover .text,
 .handle:focus .text {
   transform: scale(1.2);
+}
+
+.row {
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--handle-size);
+}
+.title {
+}
+.progress-bar {
 }
