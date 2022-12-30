@@ -17,6 +17,16 @@ window.addEventListener('resize', (e) => {
   // Recalculate Progress Bar
 });
 
+function calculateProgressBar(progressBar) {
+  progressBar.innerHTML = '';
+  const slider = progressBar.closest('.row').querySelector('.slider');
+  const itemCount = slider.children.length;
+  const itemPerScreen = parseInt(
+    getComputedStyle(slider).getPropertyValue('--items-per-screen')
+  );
+  const progressBarItemCount = Math.ceil(itemPerScreen / itemCount);
+}
+
 function onHandleClick(handle) {
   const slider = handle.closest('.container').querySelector('.slider');
   const sliderIndex = parseInt(
