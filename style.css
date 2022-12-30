@@ -82,9 +82,11 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 calc(var(--img-gap) * 2 + var(--handle-size));
+  padding: 0.5rem calc(var(--img-gap) * 2 + var(--handle-size));
 }
 .title {
+  font-size: 2rem;
+  margin: 0;
 }
 .progress-bar {
 }
