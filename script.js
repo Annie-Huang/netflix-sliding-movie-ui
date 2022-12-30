@@ -24,7 +24,19 @@ function calculateProgressBar(progressBar) {
   const itemPerScreen = parseInt(
     getComputedStyle(slider).getPropertyValue('--items-per-screen')
   );
+  const sliderIndex = parseInt(
+    getComputedStyle(slider).getPropertyValue('--slider-index')
+  );
   const progressBarItemCount = Math.ceil(itemPerScreen / itemCount);
+
+  for (let i = 0; i < progressBarItemCount; i++) {
+    const barItem = document.createElement('div');
+    barItem.classList.add('progress-item');
+    if (i === sliderIndex) {
+      barItem.classList.add('active');
+    }
+    progressBar.append(barItem);
+  }
 }
 
 function onHandleClick(handle) {
