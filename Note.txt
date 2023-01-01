@@ -4,6 +4,8 @@ https://github.com/WebDevSimplified/netflix-sliding-movie-ui
 https://github.com/Annie-Huang/netflix-sliding-movie-ui
 
 https://www.toptal.com/designers/htmlarrows/
+https://blog.webdevsimplified.com/
+https://blog.webdevsimplified.com/2022-03/debounce-vs-throttle/
 --------------------------------------------------------------------
 
 https://via.placeholder.com/200?text=1
