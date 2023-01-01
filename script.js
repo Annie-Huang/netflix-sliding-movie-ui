@@ -13,15 +13,17 @@ document.addEventListener('click', (e) => {
   }
 });
 
+const throttleProgressBar = throttle(() => {
+  document
+    .querySelectorAll('.progress-bar')
+    // this is the same as below
+    // .forEach((p) => calculateProgressBar(p));
+    .forEach(calculateProgressBar);
+}, 250);
+
 window.addEventListener('resize', (e) => {
   // Recalculate Progress Bar
 });
-
-document
-  .querySelectorAll('.progress-bar')
-  // this is the same as below
-  // .forEach((p) => calculateProgressBar(p));
-  .forEach(calculateProgressBar);
 
 function calculateProgressBar(progressBar) {
   progressBar.innerHTML = '';
