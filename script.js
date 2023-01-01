@@ -21,9 +21,7 @@ const throttleProgressBar = throttle(() => {
     .forEach(calculateProgressBar);
 }, 250);
 
-window.addEventListener('resize', (e) => {
-  // Recalculate Progress Bar
-});
+window.addEventListener('resize', throttleProgressBar);
 
 function calculateProgressBar(progressBar) {
   progressBar.innerHTML = '';
