@@ -30,10 +30,16 @@ function calculateProgressBar(progressBar) {
   const itemPerScreen = parseInt(
     getComputedStyle(slider).getPropertyValue('--items-per-screen')
   );
-  const sliderIndex = parseInt(
+  let sliderIndex = parseInt(
     getComputedStyle(slider).getPropertyValue('--slider-index')
   );
   const progressBarItemCount = Math.ceil(itemCount / itemPerScreen);
+
+  // When you are on small screen, get to the last slide, then increase the screen size, keep the active one to be the last one on the screen.
+  if (sliderIndex >= progressBarItemCount) {
+    slider.style.setProperty('--slider-index', progressBarItemCount - 1);
+    sliderIndex = progressBarItemCount - 1;
+  }
 
   for (let i = 0; i < progressBarItemCount; i++) {
     const barItem = document.createElement('div');
