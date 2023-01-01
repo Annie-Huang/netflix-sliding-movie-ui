@@ -46,6 +46,7 @@ function calculateProgressBar(progressBar) {
 }
 
 function onHandleClick(handle) {
+  const progressBar = handle.closest('.row').querySelector('.progress-bar');
   const slider = handle.closest('.container').querySelector('.slider');
   const sliderIndex = parseInt(
     getComputedStyle(slider).getPropertyValue('--slider-index')
@@ -53,9 +54,13 @@ function onHandleClick(handle) {
 
   if (handle.classList.contains('left-handle')) {
     slider.style.setProperty('--slider-index', sliderIndex - 1);
+    progressBar.children[sliderIndex].classList.remove('active');
+    progressBar.children[sliderIndex - 1].classList.add('active');
   }
 
   if (handle.classList.contains('right-handle')) {
     slider.style.setProperty('--slider-index', sliderIndex + 1);
+    progressBar.children[sliderIndex].classList.remove('active');
+    progressBar.children[sliderIndex + 1].classList.add('active');
   }
 }
